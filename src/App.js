@@ -7,9 +7,8 @@ function App() {
   return (
     <div className="App">
       <h1>Bott battlr army</h1>
-      <BotCard />
-      <BotCollection />
       <MyBotArmy />
+      <BotCollection />
     </div>
   );
 }
