@@ -13,7 +13,7 @@ function BotCard({ bot, removeBot, disChargeBot}) {
             <p>Armor: {bot.armor}</p>
             <p>Catchphrase: "{bot.catchphrase}"</p>
             {removeBot && (
-                <button onClick={() => removeBot(bot.id)}>Remove from Army</button>
+                <button onClick={() => removeBot(bot.id)} className='remover'>Remove from Army [X]</button>
             )}
             {disChargeBot && (
                 <button style={{ color: 'red'}} onClick={() => disChargeBot(bot.id)}>

@@ -22,3 +22,10 @@ code {
   text-align: center;
   font-family: monospace;
 }
+
+.remover {
+  background-color: red;
+  color: white;
+  font-family: sans-serif;
+  
+}
