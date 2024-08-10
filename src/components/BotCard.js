@@ -1,5 +1,5 @@
 import React from 'react'
-function BotCard({ bot, removeBot }) {
+function BotCard({ bot, removeBot, disChargeBot}) {
 
     return (
         <div className="bot-card">
@@ -15,6 +15,12 @@ function BotCard({ bot, removeBot }) {
             {removeBot && (
                 <button onClick={() => removeBot(bot.id)}>Remove from Army</button>
             )}
+            {disChargeBot && (
+                <button style={{ color: 'red'}} onClick={() => disChargeBot(bot.id)}>
+                    Discharge
+                </button>
+            )}
+          
 
         </div>
     );

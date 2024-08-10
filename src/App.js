@@ -12,12 +12,22 @@ function App() {
   const removeBotFromArmy = (id) => {
     setArmy(army.filter(bot => bot.id !== id));
   };
+  const dischargeBot = (id) => {
+    fetch(`http://localhost:3000/bots/${id}`, {
+
+      method: 'DELETE'
+      
+    })
+    .then(() => {
+      removeBotFromArmy(id);
+    })
+  }
   return (
     <div className="App">
      <h1>Bott Battlr</h1>
      <div className="container">
       <BotCollection addBotToArmy={adddBotToArmy} />
-      <MyBotArmy army={army} removeBot={removeBotFromArmy} />
+      <MyBotArmy army={army} removeBot={removeBotFromArmy} dischargeBot={{dischargeBot}}/>
      </div>
     
     </div>
