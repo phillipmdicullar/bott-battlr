@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
+import BotCard from './BotCard';
 
-const MyBotArmy = () => {
+function MyBotArmy({ army, removeBot }) {
   return (
-    <div>MyBotArmy</div>
-  )
+    <div className="your-bot-army">
+      <h2>Your Bot Army</h2>
+      {army.length > 0 ? (
+        army.map(bot => (
+          <div key={bot.id} onClick={() => removeBot(bot.id)}>
+            <BotCard bot={bot} />
+          </div>
+        ))
+      ) : (
+        <p>No bots in your army yet!</p>
+      )}
+    </div>
+  );
 }
 
-export default MyBotArmy
+export default MyBotArmy;
