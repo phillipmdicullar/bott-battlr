@@ -6,34 +6,34 @@
 Node.js and npm installed on your machine.
 JSON Server for the backend.
 Steps
-# Clone the repository:
+## Clone the repository:
 
 bash
 Copy code
 git clone git@github.com:phillipmdicullar/bott-battlr.git
 cd Bot-Battlr
-# Install dependencies:
+## Install dependencies:
 
 bash
 Copy code
 npm install
 
-# Start JSON Server:
+## Start JSON Server:
 
 bash
 Copy code
 json-server --watch db.json --port 8001
 
-# Start the React app:
+## Start the React app:
 
 bash
 Copy code
 npm start
-Open your browser and navigate to:
+## Open your browser and navigate to:
 
 Copy code
 http://localhost:3000
-Usage
+# Usage
 ## Once the app is running, you can:
 
 Browse through the list of bots in the BotCollection.
@@ -64,11 +64,11 @@ DELETE /bots/:id: Delete a bot by its ID.
 # Contributing
 Contributions are welcome! If you have suggestions or encounter issues, feel free to open a pull request or an issue on the repository.
 
-## bSteps for Contributing:
+## Steps for Contributing:
 Fork the repository.
 Create a new branch: git checkout -b my-feature.
 Make your changes and commit them: git commit -m 'Add new feature'.
 Push to the branch: git push origin my-feature.
 Submit a pull request.
-# License
+## License
 This project is licensed under the MIT License.
