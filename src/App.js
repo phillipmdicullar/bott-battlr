@@ -13,7 +13,7 @@ function App() {
     setArmy(army.filter(bot => bot.id !== id));
   };
   const dischargeBot = (id) => {
-    fetch(`http://localhost:3000/bots/${id}`, {
+    fetch(`https://bott-battlers-backend.vercel.app/bots/${id}`, {
 
       method: 'DELETE'
       

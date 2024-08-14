@@ -4,7 +4,7 @@ function BotCollection({addBotToArmy}) {
   const [bots, setBots] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://bott-battlers-backend.vercel.app/bots")
       .then(response => response.json())
       .then(data => setBots(data));
       console.log(bots)

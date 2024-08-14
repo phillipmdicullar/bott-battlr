@@ -2,6 +2,9 @@
   text-align: center;
   background-color: black;
   color: white;
+  display:contents;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .App-logo {
